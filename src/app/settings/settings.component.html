@@ -1,0 +1,64 @@
+<div class="user-profile">
+
+  <!-- render if not editting -->
+  <div class="edit-enabled" *ngIf="!isEditEnabled">
+    <img class="user-image" src="{{imageUrl}}">
+      
+    <div class="username">
+      <div class="display">
+        <label id="label-username-non-edit" for="username">Username:</label>
+        <span id="text-username-non-edit" name="username">{{username}}</span>
+      </div>
+    </div>
+      
+    <div class="email">
+      <div class="display">
+        <label id="label-password-non-edit" for="email">Email:</label>
+        <span id="text-password-non-edit" name="password">{{email}}</span>
+      </div>
+    </div>
+      
+    <div class="button">
+      <button id="edit-button" (click)="editting()">
+        Edit
+      </button>
+    </div>
+  </div>
+
+  <!-- render if is editting -->
+  <div class="edit-enabled" *ngIf="isEditEnabled">
+    <div class="image-edit">
+      <div class="display">
+        <label id="label-image-edit" for="image-url">Image URL:</label>
+        <input id="input-image-edit" type="text" name="image-url" #username>
+      </div>
+    </div>
+
+    <div class="username">
+      <div class="display">
+        <label id="label-username-edit" for="username">Username:</label>
+        <input id="input-username-edit" type="text" name="username" #username>
+      </div>
+    </div>
+      
+    <div class="email">
+      <div class="display">
+        <label id="label-email-edit" for="email">Email:</label>
+        <input id="input-email-edit" class="email" type="text" name="email" #email>
+      </div>
+    </div>
+
+    <div class="password">
+      <div class="display">
+        <label id="label-password-edit" for="password">Password:</label>
+        <input id="input-password-edit" class="password" type="password" name="password" #password>
+      </div>
+    </div>
+      
+    <div class="button">
+      <button id="save-button" (click)="editSaved()">Save</button>
+      <button id="cancel-button" (click)="editcanceled()">Cancel</button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,27 @@
+.data-summary-container {
+  text-align: left;
+  font-family: verdana;
+}
+
+button {
+  background-color: #5c95de;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: number;
+}
+
+img {
+  width: 550px;
+  float:right;
+  margin: 0px 20px;
+}

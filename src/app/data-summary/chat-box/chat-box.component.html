@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row chat col-xs-5 col-md-3" style="margin-left:10px;">
+        <div  class="col-xs-12 col-md-12">
+        	<div class="chatContainer panel-default">
+                <div  class="panel-heading topBar">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <h3 class="panel-title"><i class="comments icon"></i> Chat</h3>
+                        </div>
+                        <div class="col-md-6 collapseIcon">
+                          <button type="button" class="btn btn-default btn-circle"><i class="fa fa-angle-down" aria-hidden="true"><b>X</b></i></button>
+                        </div>
+                    </div>
+             
+                </div>
+                <div class="hideChat" >
+                  <div class="panel-body messageContainer">
+                      <div class="row messageContainerInner">
+                          <div class="col-md-10 col-xs-10 message">
+                              <div class="messages sent" *ngFor="let m of messagesdisplayed; index as n">
+                                  <app-chat-message 
+							          [message]="m"
+                					  [name]="names[n]">
+							        </app-chat-message>
+							        <hr>
+                              </div>
+                          </div>
+                      </div>      
+              
+                  </div>
+                  <div class="panel-footer">
+                      <div class="input-group">
+                          <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write Message..." />
+                          <span class="input-group-btn">
+                          <button class="btn btn-primary btn-sm send" (click)="addMessage()">Send</button>
+                          </span>
+                      </div>
+                  </div>
+                </div>
+    		</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+.login-container {
+  text-align: center;
+  font-family: verdana;
+}
+
+h1 {
+  font-size: 26px;
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+#username, #password {
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 15px 50px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: #5c95de  2px solid;
+  outline-color:#d9fce0;
+  outline-offset: 1px;
+}
+
+#username-label {
+  padding: 15px 27px;
+  margin: 4px 2px;
+}
+
+#password-label {
+  padding: 15px 30px;
+  margin: 4px 2px;
+}
+
+#first-button, #second-button {
+  background-color: #5c95de;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.two-buttons {
+  padding: 10px 20px;
+  margin-left:154px;
+}

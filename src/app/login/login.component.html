@@ -1,0 +1,64 @@
+<div class="login-container">
+  <h1>LOGIN</h1>
+
+  <div class="alert alert-danger" role="alert" *ngIf="message">
+      {{ message }}
+  </div>
+
+  <form style="text-align: center;" class="" *ngIf="!authService.getUser()">
+      <div class="input-box">
+        <label id="username-label" for="username">Username:</label>
+        <input id="username" type="text" placeholder="Try: someuser" name="username" #username>
+      </div>
+      <div class="input-box">
+        <label id="password-label" for="password">Password:</label>
+        <input id="password" type="password" placeholder="Try: somepass" name="password" #password>
+      </div>
+          
+      <div class="two-buttons">
+          <button id="first-button" (click)="login(username.value, password.value)">Login</button>
+          <button id="second-button">Forget Password?</button>
+      </div>            
+  </form>
+
+  <div  *ngIf="authService.getUser()">
+    Welcome,  <b>{{ authService.getUser() }}</b>
+    <a href (click)="logout()">Log out</a>
+    <br><br><br><br>
+    <p>This application displays survey results conducted with a group of people about the kind of subscriptions they have on their smart phones. </p>
+    Things you can do - <br><br>
+    	Go to the survey results page and check the survey questions along with the results<br><br>
+    	Go to the setting page and change your profile information<br><br>
+    	If you are in a hurry, you could use the chat bot and type one of the below keyword to get relevant survey information<br><br>
+    	iPhone<br>
+    	Android<br>
+    	Apple music<br>
+    	Google play music<br>
+    	Spotify<br>
+    	Pandora<br>
+    	Amazon music<br>
+    	Netflix<br>
+    	Hulu<br>
+    	Amazon video<br>
+    	HBO NOW<br>
+    	HotStar<br>
+    	News<br>
+    	Action<br>
+    	Arcade<br>
+    	Card<br>
+    	Casual<br>
+    	Puzzle<br>
+    	Sports<br>
+    	Racing<br><br>
+    
+    	Thank you for visiting :) <br>
+    	
+  </div>
+  
+</div>
+
+ 
+
+
+
+

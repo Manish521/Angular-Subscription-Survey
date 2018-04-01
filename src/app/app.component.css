@@ -1,0 +1,32 @@
+.navigation-bar-container {
+  text-align:center;
+}
+
+li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover, 
+a:active, 
+a:focus
+ {
+  background-color: #5c95de;
+  color: white;
+}
