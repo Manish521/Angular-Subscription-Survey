@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
+This application displays survey results conducted with a group of people about the kind of subscriptions they have on their smart phones.
+
+Things you can do - 
+
+Go to the survey results page and check the survey questions along with the results
+
+Go to the setting page and change your profile information
+
+If you are in a hurry, you could use the chat bot to get relevant survey information
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
